@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+
+		body {
+		  
+			color: white;
+		  font: normal 32px/1.6 system-ui, sans-serif;
+			text-shadow: 0 1px 1px hsl(0 0% 0% / 20%);
+		  margin: 3rem;
+		}
+
+		
+		h1 {
+		  color:#c00;
+		  font-family:sans-serif;
+		  font-size:2em;
+		  margin-bottom:0;
+		}
+
+table {  
+	color: black;
+  font-family:sans-serif;
+  th, td {
+    padding:.25em .5em;
+    text-align:left;
+    &:nth-child(2) {
+      text-align:right;
+    }
+  }
+  
+.zigzag {
+  border-collapse:separate;
+  border-spacing:.25em 1em;
+  tbody tr:nth-child(odd) {
+    transform:rotate(2deg);
+  }
+  thead tr,
+  tbody tr:nth-child(even) {
+    transform:rotate(-2deg);
+  }
+}
+</style>
+
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Rank Based RS</title>
+</head>
+<body>
+	<a href="/knowledge" > KnowledgeBased </a> <br/>
+	<a href="/content"> ContentBased </a>
+	<h1 align="center"> TOP 100 MOVIES OF ALL TIMES</h1>
+
+<table align="center" class="zigzag">
+  <thead>
+    <tr>
+      <th class="header">Rank</th>
+      <th class="header">Movie</th>
+      <th class="header">Score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Shawshank Redemption, The (1994)</td>
+      <td>4.23</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Fight Club (1999)</td>
+      <td>4.06</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Godfather, The (1972)</td>
+      <td>4.05</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Star Wars: Episode IV - A New Hope (1977)</td>
+      <td>4.05</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Pulp Fiction (1994)</td>
+      <td>4.05</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Matrix, The (1999)</td>
+      <td>4.03</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Schindler's List (1993)</td>
+      <td>4.03</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>Forrest Gump (1994)</td>
+      <td>4.03</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Usual Suspects, The (1995)</td>
+      <td>4.02</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>Silence of the Lambs, The (1991)</td>
+      <td>4.01</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Star Wars: Episode V - The Empire Strikes Back (1980)</td>
+      <td>4.01</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)</td>
+      <td>4.00</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>Dark Knight, The (2008)</td>
+      <td>3.97</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>Princess Bride, The (1987)</td>
+      <td>3.96</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>Godfather: Part II, The (1974)</td>
+      <td>3.96</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>Saving Private Ryan (1998)</td>
+      <td>3.95</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>Star Wars: Episode VI - Return of the Jedi (1983)</td>
+      <td>3.95</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>Goodfellas (1990)</td>
+      <td>3.95</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>Reservoir Dogs (1992)</td>
+      <td>3.93</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>Lord of the Rings: The Return of the King, The (2003)</td>
+      <td>3.93</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>Lord of the Rings: The Fellowship of the Ring, The (2001)</td>
+      <td>3.93</td>
+    </tr>
+    <tr>
+      <td>22</td>
+      <td>One Flew Over the Cuckoo's Nest (1975)</td>
+      <td>3.93</td>
+    </tr>
+    <tr>
+      <td>23</td>
+      <td>American History X (1998)</td>
+      <td>3.93</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>Fargo (1996)</td>
+      <td>3.92</td>
+    </tr>
+    <tr>
+      <td>25</td>
+      <td>Departed, The (2006)</td>
+      <td>3.92</td>
+    </tr>
+    <tr>
+      <td>26</td>
+      <td>Monty Python and the Holy Grail (1975)</td>
+      <td>3.91</td>
+    </tr>
+    <tr>
+      <td>27</td>
+      <td>Memento (2000)</td>
+      <td>3.91</td>
+    </tr>
+    <tr>
+      <td>28</td>
+      <td>Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)</td>
+      <td>3.91</td>
+    </tr>
+    <tr>
+      <td>29</td>
+      <td>Casablanca (1942)</td>
+      <td>3.90</td>
+    </tr>
+    <tr>
+      <td>30</td>
+      <td>Eternal Sunshine of the Spotless Mind (2004)</td>
+      <td>3.90</td>
+    </tr>
+    <tr>
+      <td>31</td>
+      <td>Amelie (Fabuleux destin d'Amélie Poulain, Le) (2001)</td>
+      <td>3.90</td>
+    </tr>
+    <tr>
+      <td>32</td>
+      <td>Apocalypse Now (1979)</td>
+      <td>3.90</td>
+    </tr>
+    <tr>
+      <td>33</td>
+      <td>American Beauty (1999)</td>
+      <td>3.89</td>
+    </tr>
+    <tr>
+      <td>34</td>
+      <td>Braveheart (1995)</td>
+      <td>3.89</td>
+    </tr>
+    <tr>
+      <td>35</td>
+      <td>Rear Window (1954)</td>
+      <td>3.88</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>Green Mile, The (1999)</td>
+      <td>3.87</td>
+    </tr>
+    <tr>
+      <td>37</td>
+      <td>Good Will Hunting (1997)</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td>38</td>
+      <td>Blade Runner (1982)</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td>39</td>
+      <td>Inception (2010)</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td>40</td>
+      <td>Lord of the Rings: The Two Towers, The (2002)</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>Back to the Future (1985)</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td>42</td>
+      <td>Snatch (2000)</td>
+      <td>3.85</td>
+    </tr>
+    <tr>
+      <td>43</td>
+      <td>Indiana Jones and the Last Crusade (1989)</td>
+      <td>3.84</td>
+    </tr>
+    <tr>
+      <td>44</td>
+      <td>Seven (a.k.a. Se7en) (1995)</td>
+      <td>3.84</td>
+    </tr>
+    <tr>
+      <td>45</td>
+      <td>Taxi Driver (1976)</td>
+      <td>3.84</td>
+    </tr>
+    <tr>
+      <td>46</td>
+      <td>Terminator 2: Judgment Day (1991)</td>
+      <td>3.84</td>
+    </tr>
+    <tr>
+      <td>47</td>
+      <td>Fugitive, The (1993)</td>
+      <td>3.84</td>
+    </tr>
+    <tr>
+      <td>48</td>
+      <td>Twelve Monkeys (a.k.a. 12 Monkeys) (1995)</td>
+      <td>3.83</td>
+    </tr>
+    <tr>
+      <td>49</td>
+      <td>Spirited Away (Sen to Chihiro no kamikakushi) (2001)</td>
+      <td>3.83</td>
+    </tr>
+    <tr>
+      <td>50</td>
+      <td>Life Is Beautiful (La Vita è bella) (1997)</td>
+      <td>3.83</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>Full Metal Jacket (1987)</td>
+      <td>3.83</td>
+    </tr>
+    <tr>
+      <td>52</td>
+      <td>Inglourious Basterds (2009)</td>
+      <td>3.83</td>
+    </tr>
+    <tr>
+      <td>53</td>
+      <td>Shining, The (1980)</td>
+      <td>3.83</td>
+    </tr>
+    <tr>
+      <td>54</td>
+      <td>Léon: The Professional (a.k.a. The Professional) (Léon) (1994)</td>
+      <td>3.82</td>
+    </tr>
+    <tr>
+      <td>55</td>
+      <td>Office Space (1999)</td>
+      <td>3.81</td>
+    </tr>
+    <tr>
+      <td>56</td>
+      <td>WALL·E (2008)</td>
+      <td>3.81</td>
+    </tr>
+    <tr>
+      <td>57</td>
+      <td>Beautiful Mind, A (2001)</td>
+      <td>3.80</td>
+    </tr>
+    <tr>
+      <td>58</td>
+      <td>Trainspotting (1996)</td>
+      <td>3.80</td>
+    </tr>
+    <tr>
+      <td>59</td>
+      <td>Lion King, The (1994)</td>
+      <td>3.80</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>Alien (1979)</td>
+      <td>3.80</td>
+    </tr>
+    <tr>
+      <td>61</td>
+      <td>L.A. Confidential (1997)</td>
+      <td>3.80</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>Toy Story (1995)</td>
+      <td>3.80</td>
+    </tr>
+    <tr>
+      <td>63</td>
+      <td>Gladiator (2000)</td>
+      <td>3.79</td>
+    </tr>
+    <tr>
+      <td>64</td>
+      <td>Clockwork Orange, A (1971)</td>
+      <td>3.79</td>
+    </tr>
+    <tr>
+      <td>65</td>
+      <td>Finding Nemo (2003)</td>
+      <td>3.79</td>
+    </tr>
+    <tr>
+      <td>66</td>
+      <td>Aliens (1986)</td>
+      <td>3.78</td>
+    </tr>
+    <tr>
+      <td>67</td>
+      <td>Groundhog Day (1993)</td>
+      <td>3.78</td>
+    </tr>
+    <tr>
+      <td>68</td>
+      <td>Up (2009)</td>
+      <td>3.78</td>
+    </tr>
+    <tr>
+      <td>69</td>
+      <td>Kill Bill: Vol. 1 (2003)</td>
+      <td>3.78</td>
+    </tr>
+    <tr>
+      <td>70</td>
+      <td>Sixth Sense, The (1999)</td>
+      <td>3.77</td>
+    </tr>
+    <tr>
+      <td>71</td>
+      <td>Donnie Darko (2001)</td>
+      <td>3.77</td>
+    </tr>
+    <tr>
+      <td>72</td>
+      <td>Stand by Me (1986)</td>
+      <td>3.76</td>
+    </tr>
+    <tr>
+      <td>73</td>
+      <td>Prestige, The (2006)</td>
+      <td>3.76</td>
+    </tr>
+    <tr>
+      <td>74</td>
+      <td>Jaws (1975)</td>
+      <td>3.76</td>
+    </tr>
+    <tr>
+      <td>75</td>
+      <td>Heat (1995)</td>
+      <td>3.75</td>
+    </tr>
+    <tr>
+      <td>76</td>
+      <td>Shrek (2001)</td>
+      <td>3.75</td>
+    </tr>
+    <tr>
+      <td>77</td>
+      <td>Being John Malkovich (1999)</td>
+      <td>3.75</td>
+    </tr>
+    <tr>
+      <td>78</td>
+      <td>Big Lebowski, The (1998)</td>
+      <td>3.74</td>
+    </tr>
+    <tr>
+      <td>79</td>
+      <td>Catch Me If You Can (2002)</td>
+      <td>3.74</td>
+    </tr>
+    <tr>
+      <td>80</td>
+      <td>Apollo 13 (1995)</td>
+      <td>3.74</td>
+    </tr>
+    <tr>
+      <td>81</td>
+      <td>Terminator, The (1984)</td>
+      <td>3.74</td>
+    </tr>
+    <tr>
+      <td>82</td>
+      <td>Dead Poets Society (1989)</td>
+      <td>3.73</td>
+    </tr>
+    <tr>
+      <td>83</td>
+      <td>Die Hard (1988)</td>
+      <td>3.73</td>
+    </tr>
+    <tr>
+      <td>84</td>
+      <td>Gattaca (1997)</td>
+      <td>3.73</td>
+    </tr>
+    <tr>
+      <td>85</td>
+      <td>Monsters, Inc. (2001)</td>
+      <td>3.73</td>
+    </tr>
+    <tr>
+      <td>86</td>
+      <td>Requiem for a Dream (2000)</td>
+      <td>3.73</td>
+    </tr>
+    <tr>
+      <td>87</td>
+      <td>Dances with Wolves (1990)</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>88</td>
+      <td>Willy Wonka &amp; the Chocolate Factory (1971)</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>89</td>
+      <td>2001: A Space Odyssey (1968)</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>90</td>
+      <td>Monty Python's Life of Brian (1979)</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>91</td>
+      <td>Harry Potter and the Prisoner of Azkaban (2004)</td>
+      <td>3.72</td>
+    </tr>
+    <tr>
+      <td>92</td>
+      <td>Kill Bill: Vol. 2 (2004)</td>
+      <td>3.71</td>
+    </tr>
+    <tr>
+      <td>93</td>
+      <td>V for Vendetta (2006)</td>
+      <td>3.71</td>
+    </tr>
+    <tr>
+      <td>94</td>
+      <td>Batman Begins (2005)</td>
+      <td>3.71</td>
+    </tr>
+    <tr>
+      <td>95</td>
+      <td>Incredibles, The (2004)</td>
+      <td>3.70</td>
+    </tr>
+    <tr>
+      <td>96</td>
+      <td>Star Trek: First Contact (1996)</td>
+      <td>3.70</td>
+    </tr>
+    <tr>
+      <td>97</td>
+      <td>Clerks (1994)</td>
+      <td>3.70</td>
+    </tr>
+    <tr>
+      <td>98</td>
+      <td>Wizard of Oz, The (1939)</td>
+      <td>3.70</td>
+    </tr>
+    <tr>
+      <td>99</td>
+      <td>Ocean's Eleven (2001)</td>
+      <td>3.70</td>
+    </tr>
+    <tr>
+      <td>100</td>
+      <td>Aladdin (1992)</td>
+      <td>3.70</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
+	

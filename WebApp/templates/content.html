@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+
+		body {
+		  
+			color: white;
+		  font: normal 32px/1.6 system-ui, sans-serif;
+			text-shadow: 0 1px 1px hsl(0 0% 0% / 20%);
+		  margin: 3rem;
+		}
+
+		
+		h1 {
+		  color:#c00;
+		  font-family:sans-serif;
+		  font-size:2em;
+		  margin-bottom:0;
+		}
+
+
+
+		form, button, input, p, div {
+			color: black;
+		  font: inherit;
+		  padding: 0.2em 0.5em;
+		}
+
+	</style>
+
+    
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Content Based RS</title>
+</head>
+
+<body>
+	<a href="/rank" > RankBased </a> <br/>
+	<a href="/knowledge"> KnowledgeBased </a>
+
+	<h1 align="center">FAVORITE MATCHER</h1>
+
+	<form method="post" action="/content" align="center">
+		Enter a movie you like:
+		<br/>
+		<input type="text" name="Movie">
+		<br/>
+
+		<button type="submit" value="Submit">Enter</button>
+	</form>
+
+	{% if input_success == True %}
+        <br/>
+        <p align="center">top movies similer to {{title}} are:</p>
+	       	<div align="center">
+	       		{% for table in tables %}
+		            {{titles[loop.index]}}
+		            {{ table|safe }}
+				{% endfor %} </div>
+    {% endif %}
+    {% if input_success == False %}
+        <br/>
+        <p>{{error}}</p>
+
+    {% endif %}
+
+</body>
+
+
+</html>
